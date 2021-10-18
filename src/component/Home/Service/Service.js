@@ -11,7 +11,7 @@ const Service = () => {
         fetch('/medicalProduct.json')
             .then(res => res.json())
             .then(data => setServices(data))
-        // .then(data => console.log(data))
+        // .then(data => console.log('data load form lcoal',data))
     }, [])
     return (
         <div className="container -mt-5">

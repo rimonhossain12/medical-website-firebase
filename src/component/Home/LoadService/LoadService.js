@@ -1,7 +1,6 @@
 import React from 'react';
 import './LoadService.css';
 
-
 const LoadService = (props) => {
     const { name, doctorName, img, desription, Education } = props.service;
     console.log(name, doctorName, img, desription, Education);
@@ -12,7 +11,7 @@ const LoadService = (props) => {
                 <h4>Treatment: {name}</h4>
                 <h5>DoctorName: {doctorName}</h5>
                 <p>Education: {Education}</p>
-                <p>{desription.slice(0,100)}</p>
+                <p>{desription?.slice(0,100)}</p>
                 
             </div>
             
