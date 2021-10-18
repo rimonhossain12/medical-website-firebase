@@ -11,7 +11,7 @@ const LoadService = (props) => {
                 <img claName="img-fluid w-25" src={img} alt="" />
                 <h4>Treatment: {name}</h4>
                 <h5>DoctorName: {doctorName}</h5>
-                <p>Quaitfication of Doctor: {Education}</p>
+                <p>Education: {Education}</p>
                 <p>{desription.slice(0,100)}</p>
                 
             </div>

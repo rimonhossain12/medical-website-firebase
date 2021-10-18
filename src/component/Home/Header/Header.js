@@ -7,8 +7,6 @@ import pic2 from '../../../images/carousel/2.jpg';
 import pic3 from '../../../images/carousel/5.jpg';
 
 
-
-
 const Header = () => {
     return (
         <div>
@@ -76,7 +74,7 @@ const Header = () => {
 
                     <Carousel.Caption>
                         <h3>Our Special Doctor Team</h3>
-                        <p>They are always handle any serious moment patient.</p>
+                        <p>They are always handle any serious moment patient</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

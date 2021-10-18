@@ -1,6 +1,6 @@
 .text-style:hover{
-    border-bottom: 3px solid lightsalmon;
-    margin: 0 auto;
-    margin-bottom: 3px;
-    width: 48%;
+    border-bottom: 2px solid lightsalmon;
+    margin:  auto;
+    margin-top: 3px;
+    width: 46%;
 }
