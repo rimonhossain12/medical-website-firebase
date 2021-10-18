@@ -15,7 +15,8 @@ const Footer = (props) => {
                     </div>
 
                     <div className="mt-5 text-start">
-                        <h4>Opening Hour</h4>
+                        <h4 className="title-style">Opening Hour</h4>
+                        <hr className="common-hr"/>
                         <p><span className="span-space">Monday-Friday</span> <span>8:00 Am - 4:00 Pm </span></p>
                         <p><span className="span-space">Monday-Friday</span> <span>8:00 Am - 4:00 Pm </span></p>
                         <p><span className="span-space">Monday-Friday</span> <span>8:00 Am - 4:00 Pm </span></p>
@@ -23,14 +24,16 @@ const Footer = (props) => {
                     </div>
 
                     <div className="mt-5 text-start">
-                        <h4>Our Best Doctor</h4>
+                        <h4 className="title-style">Our Best Doctor</h4>
+                        <hr className="common-hr" />
                         <p>Dr.MD. Rizad Hasan</p>
                         <p>Dr.MD.Jabbor Ali</p>
                         <p>Dr.MD.Kamal Uddin</p>
                         <p>Dr.Halim khan</p>
                     </div>
                     <div className="mt-5 text-start">
-                        <h4>Contact us</h4>
+                        <h4 className="title-style">Contact us</h4>
+                        <hr className="common-hr" />
                         <p>House NO 27, Road No 07, East Road,</p>
                         <p>Dhaka Bangladesh</p>
 
