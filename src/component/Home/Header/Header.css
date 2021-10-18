@@ -1,0 +1,13 @@
+/* btn styles */
+.btn-style{
+    padding: 10px 30px;
+    margin-right: 5px;
+    color: white;
+    border: none;
+    margin-bottom: 5px;
+}
+
+img{
+    margin-top: 2px;
+    border-radius: 50%;
+}
