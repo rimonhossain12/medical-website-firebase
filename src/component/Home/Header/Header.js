@@ -80,11 +80,6 @@ const Header = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
-
-
-
-
             {/* carousel ends */}
         </div>
     );
