@@ -17,8 +17,8 @@ const MedicalService = () => {
         <div>
             <Header></Header>
 
-           <div className="container mt-5 para-style">
-               <h2 className="fw-bold">What kind of service we are provided</h2>
+           <div className="container mt-5 para-anim">
+               <h2 className="fw-bold par-anim">What kind of service we are provided</h2>
                 <Row xs={1} md={3} lg={4} className="g-4">
                     <Col className="mt-5 para-style">
                         <img src={log1} alt="" />

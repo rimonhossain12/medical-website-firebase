@@ -10,13 +10,15 @@ import picture6 from '../../../images/doctor/6.jpg';
 import picture7 from '../../../images/doctor/7.jpg';
 import picture8 from '../../../images/doctor/8.jpg';
 import { Col, Row } from 'react-bootstrap';
-import { faPencilRuler } from '@fortawesome/free-solid-svg-icons';
+import './Doctor.css';
 
 const Doctor = () => {
     return (
         <div>
             <Header></Header>
-            <div className="container mt-5">
+            <div className="container mt-5 doctor-animation">
+                <h5 className="text-info fw-bold">Our Hospital doctors</h5>
+                <hr className="w-25 mx-auto" />
                 <Row xs={1} md={3} lg={4}>
                     <Col className="mt-3 col-style">
                        
