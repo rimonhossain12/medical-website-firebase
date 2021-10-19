@@ -54,7 +54,7 @@ const MedicalService = () => {
 
                     <Col className="mt-5 para-style">
                         <img src={log8} alt="" />
-                        <p className="text-start mt-2">Caner specialist come after 3 days later</p>
+                        <p className="text-start mt-2">Cancer specialist come after 3 days later</p>
                     </Col>
                 </Row>
            </div>
