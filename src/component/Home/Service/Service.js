@@ -20,7 +20,7 @@ const Service = () => {
         <div>
             <div className="container -mt-5">
                 <h3 className="mt-5 text-primary mb-5 text-style fs-italic fst-italic">Our Twenty Four hour Emergency service</h3>
-                <Row xs={1} md={2} xl={3} className="g-2">
+            <Row xs={1} md={2} xl={3} className="g-2">
                     {
                         services.map(service => <LoadService
                             service={service.id}

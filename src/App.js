@@ -7,6 +7,7 @@ import Home from './component/Home/Home';
 import MedicalService from './component/Home/MedicalService/MedicalService';
 import Doctor from './component/Home/Doctor/Doctor';
 import NotFound from './component/shared/NotFound/NotFound';
+import Clients from './component/Home/Clients/Clients';
 // import Address from './component/Home/Address/Address';
 
 function App() {
@@ -29,10 +30,13 @@ function App() {
           <Route path="/doctor">
             <Doctor></Doctor>
         </Route>
+          <Route path="/client">
+          <Clients></Clients>
+          </Route>
 
-        <Route path="*">
+        {/* <Route path="*">
           <NotFound></NotFound>
-        </Route>
+        </Route> */}
 
         </Switch>
       </Router>

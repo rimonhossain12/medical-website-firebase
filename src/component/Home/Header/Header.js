@@ -29,7 +29,7 @@ const Header = () => {
                             <Nav.Link as = {HashLink} to ="/about#about" className="text-primary fw-bold">About</Nav.Link>
                             <Nav.Link as = {HashLink} to ="/service#service" className="text-primary fw-bold">Service</Nav.Link>
                             <Nav.Link as={HashLink} to="/doctor#doctor" className="text-primary fw-bold">Doctor</Nav.Link>
-                            <Nav.Link as = {HashLink} to ="/client#client" className="text-primary fw-bold">Clients</Nav.Link>
+                            <Nav.Link as={HashLink} to="/client#client" className="text-primary fw-bold">Client</Nav.Link>
                             <Nav.Link as={HashLink} to ="/contact#contact" className="text-primary fw-bold">contact</Nav.Link>
                             <button className="badge rounded-pill btn-warning btn-style">LogIn</button>
                             <button className="badge rounded-pill btn-warning btn-style">LogOut</button>
