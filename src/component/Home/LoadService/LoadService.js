@@ -4,7 +4,7 @@ import './LoadService.css';
 
 const LoadService = (props) => {
     const { name, doctorName, img, desription, Education } = props.service;
-    console.log(name, doctorName, img, desription, Education);
+    // console.log(name, doctorName, img, desription, Education);
     return (
         <div>
             <div className="data-container">
