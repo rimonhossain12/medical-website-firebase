@@ -24,13 +24,15 @@ const Doctor = () => {
                        
                         <img src={picture1} alt="" />
                         <h4 className="text-info">Dr.Ms Fatema Khatun</h4>
-                        <span className="text-primary">From Span</span>
+                        <span className="text-primary">From Span</span> <br />
+                        <button className="btn btn-primary">Serial Now</button>
                     </Col>
 
                     <Col className="mt-3">
                         <img src={picture2} alt="" />
                         <h4 className="text-info">Dr.Ms Jessica</h4>
                         <span className="text-primary">From USA</span>
+                    
                     </Col>
 
 
@@ -38,6 +40,7 @@ const Doctor = () => {
                         <img src={picture3} alt="" />
                         <h4 className="text-info">Dr.Ms.Karina"</h4>
                         <span className="text-primary">From Japan</span>
+                      
 
                     </Col>
 
@@ -45,30 +48,35 @@ const Doctor = () => {
                         <img src={picture4} alt="" />
                         <h4 className="text-info">Dr.Taku</h4>
                         <span className="text-primary">From China</span>
+                       
                     </Col>
 
                     <Col className="mt-3">
                         <img src={picture5} alt="" />
                         <h4 className="text-info">Dr.Ms Karim</h4>
                         <span className="text-primary">From London</span>
+                       
                     </Col>
 
                     <Col className="mt-3">
                         <img src={picture6} alt="" />
                         <h4 className="text-info">Dr.Abullahil Khafi </h4>
                         <span className="text-primary">From British</span>
+                       
                     </Col>
 
                     <Col className="mt-3">
                         <img src={picture7} alt="" />
                         <h4 className="text-info">Dr.Kamal</h4>
                         <span className="text-primary">From Uganda</span>
+                     
                     </Col>
 
                     <Col className="mt-3">
                         <img src={picture8} alt="" />
                         <h4 className="text-info">Dr.Ms Natasha</h4>
                         <span className="text-primary">From Singapore</span>
+                       
                     </Col>
                 </Row>
 

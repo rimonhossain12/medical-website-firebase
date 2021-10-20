@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import './LoadService.css';
 
@@ -12,11 +13,10 @@ const LoadService = (props) => {
                 <h4>Treatment: {name}</h4>
                 <h5>DoctorName: {doctorName}</h5>
                 <p>Education: {Education}</p>
-                <p>{desription?.slice(0,100)}</p>
-                
+                <p>{desription?.slice(0, 100)}</p>
+                <button className="btn btn-primary">serial Now</button>
             </div>
-            
-        </div>
+          </div>
     );
 };
 

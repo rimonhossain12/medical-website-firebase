@@ -1,7 +1,7 @@
 .doctor-animation{
      animation-duration: 5s;
      animation-name: slidein;
-     animation-iteration-count: 2;
+     animation-iteration-count: 1;
 }
 
 @keyframes slidein {
