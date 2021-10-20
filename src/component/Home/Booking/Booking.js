@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import './Booking.css';
 
 
@@ -25,8 +26,12 @@ const Booking = () => {
                 <h5 className="text-info fw-normal">{service?.doctorName}</h5>
                 <p className="text-primary">Education: {service?.Education}</p>
                 <p className="text-start ms-3 ">{service?.desription}</p>
-
            </div>
+
+           <Link to="/home">
+                <button className="btn btn-primary">Back to Home</button>
+           </Link>
+
            
 
            {/*  // <h2>This is booking: {service?.name}</h2> */}
