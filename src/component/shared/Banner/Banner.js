@@ -8,6 +8,7 @@ import logo from '../../../images/logo3.jpg';
 
 const Banner = () => {
     const { user, logOut} = useAuth();
+    console.log('user is see from banner',user);
     return (
         <div>
             <Navbar bg="light" expand="lg">
@@ -38,11 +39,6 @@ const Banner = () => {
                                     <Link to="/login"> <button className="badge rounded-pill btn-warning btn-style">LogIn</button></Link>
 
                             }
-
-
-
-
-
 
                             {/* <Link to="/login"></Link> */}
 
