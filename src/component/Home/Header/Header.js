@@ -7,10 +7,12 @@ import pic2 from '../../../images/carousel/2.jpg';
 import pic3 from '../../../images/carousel/5.jpg';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 
 
 const Header = () => {
+    const { user, logOut, singInUsingGoogle} = useAuth();
     return (
         <div>
             {/* navbar start */}
@@ -35,13 +37,17 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/client#client" className="text-primary fw-bold">Client</Nav.Link>
                             <Nav.Link as={HashLink} to="/register#register" className="text-primary fw-bold">Register</Nav.Link>
                             <Nav.Link as={HashLink} to="/contact#contact" className="text-primary fw-bold">contact</Nav.Link>
-                            {/* <Nav.Link as={HashLink} to="/contact#contact" className="text-info fw-bold">{user.displayName}</Nav.Link> */}
+                            <Nav.Link className="text-info fw-bold">{user?.displayName}</Nav.Link>
 
-                            {/* {
-                                user.email ?  <button className="badge rounded-pill btn-warning btn-style" onClick={logOut}>LogOut</button> :
-                                    <Link to="/login"> <button className="badge rounded-pill btn-warning btn-style" onClick={singInUsingGoogle}>LogIn</button></Link>
+                        {
+                                  user.email ? <button className="badge rounded-pill btn-warning btn-style" onClick={logOut}>LogOut</button>:
+                                    <Link to="/login"> <button className="badge rounded-pill btn-warning btn-style">LogIn</button></Link>
 
-                            } */}
+                        }
+                           
+                          
+
+
 
 
                             {/* <Link to="/login"></Link> */}

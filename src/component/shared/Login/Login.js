@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
+
+
 import './Login.css';
 
 const Login = () => {
-   const { singInUsingGoogle } = useAuth();
-
+   const {singInUsingGoogle } = useAuth();
 
    /*  const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -19,7 +20,7 @@ const Login = () => {
  
  
     const handleRegistration = (e) => {
-       console.log(email, password);
+       console.log(email, password); 
     }
   */
    return (

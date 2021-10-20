@@ -9,57 +9,53 @@ import Doctor from './component/Home/Doctor/Doctor';
 import NotFound from './component/shared/NotFound/NotFound';
 import Clients from './component/Home/Clients/Clients';
 import Login from './component/shared/Login/Login';
-// import AuthProvider from './context/AuthProvider';
+
 import Register from './component/shared/Register/Register';
 import Contact from './component/Home/Contact/Contact';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 
-// import Address from './component/Home/Address/Address';
 
 function App() {
-  
+
   return (
     <div className="App">
-      {/* <AuthProvider> */}
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/about">
-              <About></About>
-            </Route>
-            <Route path="/service">
-              <MedicalService></MedicalService>
-            </Route>
-            <Route path="/doctor">
-              <Doctor></Doctor>
-            </Route>
-            <Route path="/client">
-              <Clients></Clients>
-            </Route>
-            <Route path="/contact">
-                <Contact></Contact>
-              </Route>
-            <Route path="/register">
-              <Register></Register>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
+
+    <AuthProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
+            <PrivateRoute path="/service">
+            <MedicalService></MedicalService>
+            </PrivateRoute>
+          <Route path="/doctor">
+            <Doctor></Doctor>
+          </Route>
+          <Route path="/client">
+            <Clients></Clients>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+        </Switch>
+      </Router>
+      </AuthProvider>
 
 
-
-            {/* <Route path="*">
-          <NotFound></NotFound>
-        </Route> */}
-
-          </Switch>
-        </Router>
-
-      {/* </AuthProvider> */}
     </div>
   );
 }

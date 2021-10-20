@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import './Register.css';
 
 
 const Register = () => {
+    const {singInUsingGoogle } = useAuth();
+
+    
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
 
@@ -33,7 +37,7 @@ const Register = () => {
                 <input onClick={handleRegistration} class="btn btn-primary" type="submit" value="Submit" />
 
                 <br />
-                <button className="btn btn-primary me-1 mb-1 badge rounded-pill bg-warning text-light">Sign In Google</button>
+                <button className="btn btn-primary me-1 mb-1 badge rounded-pill bg-warning text-light" onClick={singInUsingGoogle}>Sign In Google</button>
                 <button className="btn btn-primary badge rounded-pill bg-warning text-light">Sign In Github</button><br />
                 <Link to="/login">Already Register?</Link>
             </div>
