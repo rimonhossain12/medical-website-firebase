@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../Header/Header';
 import './LoadService.css';
 
-const LoadService = (props) => {
-    const { name, doctorName, img, desription, Education } = props.service;
-    // console.log(name, doctorName, img, desription, Education);
+const LoadService = ({service}) => {
+    const { id,name, doctorName, img, desription, Education } = service;
     return (
         <div>
             <div className="data-container">
@@ -14,7 +12,10 @@ const LoadService = (props) => {
                 <h5>DoctorName: {doctorName}</h5>
                 <p>Education: {Education}</p>
                 <p>{desription?.slice(0, 100)}</p>
-                <button className="btn btn-primary">serial Now</button>
+                <Link to={`/booking/${id}`}>
+                    <button className="btn btn-danger text-light">{name.toLowerCase()}</button>
+                </Link>
+
             </div>
           </div>
     );

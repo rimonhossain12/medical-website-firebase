@@ -1,6 +1,5 @@
 import React from 'react';
 import { Carousel, Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../../images/logo3.jpg';
 import './Header.css';
 import pic1 from '../../../images/carousel/1.jpg';
 import pic2 from '../../../images/carousel/2.jpg';
@@ -11,7 +10,7 @@ import Banner from '../../shared/Banner/Banner';
 
 
 const Header = () => {
-    const { user, logOut, singInUsingGoogle} = useAuth();
+    // const { user, logOut, singInUsingGoogle} = useAuth();
     return (
         <div>
             <Banner></Banner>

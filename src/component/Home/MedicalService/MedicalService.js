@@ -15,10 +15,10 @@ import './MedicalService.css';
 const MedicalService = () => {
     return (
         <div>
-            <Header></Header>
+            {/* <Header></Header> */}
 
            <div className="container mt-5 para-anim">
-               <h2 className="fw-bold par-anim">What kind of service we are provided</h2>
+               <h2 className="fw-bold text-info">What kind of Medical service we are provided</h2>
                 <Row xs={1} md={3} lg={4} className="g-4">
                     <Col className="mt-5 para-style">
                         <img src={log1} alt="" />
@@ -60,7 +60,7 @@ const MedicalService = () => {
                 </Row>
            </div>
 
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };
