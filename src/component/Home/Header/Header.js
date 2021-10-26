@@ -52,6 +52,7 @@ const Header = () => {
                 </Carousel.Item>
             </Carousel>
             {/* carousel ends */}
+            
         </div>
     );
 };
