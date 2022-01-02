@@ -6,17 +6,24 @@ initializeAuthentication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    const [error, setError] = useState('');
+    // const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
 
-    const singInUsingGoogle = () => {
+    const googleProvider = new GoogleAuthProvider();
 
-        const googleProvider = new GoogleAuthProvider();
-
-        return signInWithPopup(auth, googleProvider)
-            .finally(() => setIsLoading(false))
-
+    const googleSingIn = (location, history) => {
+        setIsLoading(true);
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                const user = result.user;
+                setUser(user);
+                // saveUser(user.email, user.displayName, 'PUT');
+                const destination = location?.state?.from || '/';
+                history.push(destination);
+            }).catch((error) => {
+                // setAuthError(error.message);
+            });
     }
 
     const logOut = () => {
@@ -37,7 +44,7 @@ const useFirebase = () => {
             }
             setIsLoading(false);
         })
-    }, [])
+    }, [auth])
 
 
     // email and password
@@ -60,11 +67,11 @@ const useFirebase = () => {
 
     return {
         user,
-        error,
+        // error,
         logOut,
         isLoading,
         singInEmailPassword,
-        singInUsingGoogle
+        googleSingIn,
     }
 }
 
