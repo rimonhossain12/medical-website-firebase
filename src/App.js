@@ -7,7 +7,7 @@ import Doctor from './component/Home/Doctor/Doctor';
 import NotFound from './component/shared/NotFound/NotFound';
 import Clients from './component/Home/Clients/Clients';
 import Login from './component/shared/Login/Login';
-import Register from './component/shared/Register/Register';
+// import Register from './component/shared/Register/Register';
 import Contact from './component/Home/Contact/Contact';
 import AuthProvider from './context/AuthProvider';
 import Service from './component/Home/Service/Service';
@@ -48,9 +48,9 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <Route path="/register">
+            {/* <Route path="/register">
               <Register></Register>
-            </Route>
+            </Route> */}
             <Route path="/login">
               <Login></Login>
             </Route>
