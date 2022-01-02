@@ -23,7 +23,7 @@ const Login = () => {
                <h2 className="text-primary pt-2 mb-3">Please Login</h2>
                <button className="btn badge rounded-pill bg-warning text-dark btn-style" onClick={loginWithGoogle}>Google Sign In</button>
                <br />
-               <Link to="/register">New User?</Link>
+               {/* <Link to="/register">New User?</Link> */}
             </div>
          </div>
          {/* <Footer></Footer> */}
