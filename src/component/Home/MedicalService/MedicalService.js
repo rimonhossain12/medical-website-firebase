@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import log1 from '../../../images/MedicalService/1.jpg';
 import log2 from '../../../images/MedicalService/2.jpg';
 import log3 from '../../../images/MedicalService/3.jpg';

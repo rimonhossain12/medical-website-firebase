@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import Footer from '../../Home/Footer/Footer';
-import Header from '../../Home/Header/Header';
 import Banner from '../Banner/Banner';
 import './Register.css';
 

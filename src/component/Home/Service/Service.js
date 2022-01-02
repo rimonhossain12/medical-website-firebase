@@ -25,7 +25,7 @@ const Service = () => {
                     {
                         services.map(service => <LoadService
                             service={service.id}
-                            service={service}
+                            // service={service}
                         >
                         </LoadService>)
                     }

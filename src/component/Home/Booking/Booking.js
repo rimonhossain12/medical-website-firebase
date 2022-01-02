@@ -7,7 +7,7 @@ import './Booking.css';
 const Booking = () => {
     const  { serviceId } = useParams();
     const [service, setService] = useState({})
-    console.log('service id = ', serviceId);
+    // console.log('service id = ', serviceId);
 
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/rimonhossain12/fake-data/main/medicalProduct.json')
@@ -16,7 +16,7 @@ const Booking = () => {
         const selected =    data.find(service=>service.id === serviceId)
         setService(selected)
         })
-    },[])
+    }, [serviceId])
 
     return (
         <div className="container">

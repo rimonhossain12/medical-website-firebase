@@ -1,11 +1,11 @@
 import React from 'react';
-import { Carousel, Container, Nav, Navbar } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import './Header.css';
 import pic1 from '../../../images/carousel/1.jpg';
 import pic2 from '../../../images/carousel/2.jpg';
 import pic3 from '../../../images/carousel/5.jpg';
 // import { Link } from 'react-router-dom';
-import useAuth from '../../../hooks/useAuth';
+// import useAuth from '../../../hooks/useAuth';
 import Banner from '../../shared/Banner/Banner';
 
 
